@@ -1,0 +1,32 @@
+.menu-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-area a{
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+.menu-area a:hover{
+    background-color: #cfcece;
+    color: #f5f5f5;
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-area{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu-area a{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
